@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+	<!-- default scanner settings -->
+	<scannerSettings id="set" active="true" pulseFreq_hz="400000" scanAngle_deg="60" scanFreq_hz="97.3" />
+    <survey name="mapleFlight{name}" scene="{scenepath}#maple_scene" platform="data/platforms.xml#sr22" scanner="data/scanners_als.xml#riegl_lms-q780">
+	<!-- platform: Plane, deflector: oscillating -->
+        <FWFSettings beamSampleQuality="3" binSize_ns="0.25" winSize_ns="1"/>
+        <detectorSettings rangeMax_m="1700"/>
+
+		<leg>
+			<platformSettings  x="-10" y="0" z="750." onGround="false" movePerSec_m="30"/>
+			<scannerSettings template="set" trajectoryTimeInterval_s="0.05"/>
+		</leg>
+		
+		<leg>
+			<platformSettings  x="10" y="0" z="750." onGround="false" movePerSec_m="30"/>
+			<scannerSettings template="set"  active="false"/>
+		</leg>
+		
+		<leg>
+			<platformSettings  x="-10" y="10" z="750." onGround="false" movePerSec_m="30"/>
+			<scannerSettings template="set" trajectoryTimeInterval_s="0.05"/>
+		</leg>
+
+		<leg>
+			<platformSettings  x="10" y="10" z="750." onGround="false" movePerSec_m="30"/>
+			<scannerSettings template="set"  active="false"/>
+		</leg> 
+		
+		
+		<leg>
+			<platformSettings  x="-10" y="-10" z="750." onGround="false" movePerSec_m="30"/>
+			<scannerSettings template="set" trajectoryTimeInterval_s="0.05"/>
+		</leg>
+
+		<leg>
+			<platformSettings  x="10" y="-10" z="750." onGround="false" movePerSec_m="30"/>
+			<scannerSettings template="set"  active="false"/>
+		</leg> 
+		
+
+    </survey>
+</document>

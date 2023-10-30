@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    <scene id="maple_scene" name="Field Maple static">
+        <part id="0">
+            <filter type="objloader">
+                <param type="string" key="filepath" value="data/sceneparts/basic/groundplane/groundplane.obj"/>
+            </filter>
+            <filter type="scale">
+                <param type="double" key="scale" value="100" />
+            </filter>
+        </part>
+        <part id="1">
+            <filter type="objloader">
+                <param type="string" key="filepath" value="{objfile}"/>
+                <param type="string" key="up" value="z" />
+            </filter>
+        </part>
+    </scene>
+</document>
