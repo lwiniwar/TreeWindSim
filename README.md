@@ -26,7 +26,7 @@ in the `output` folder.
 
 
 ## Analysis
-
+The analysis was calculating the mean height of returns for each of the simulations and calculating the differences to the no-wind-setting, for the merged dataset as well as for the three simulated strips. The `wind-simulation-analysis.ipynb` interactive notebook shows these results.
 
 ## Acknowledgement
 This package has been developed in the course of the *UncertainTree* project, funded by the Austrian Science Fund ([FWF](https://www.fwf.ac.at/)) [Grant number J 4672-N].
