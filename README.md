@@ -18,6 +18,8 @@ license for the `Grove3D` plugin exists. The following modelling steps led to th
 Subsequently, we ran wind simulations in the Grove using wind with strengths of 0.2, 0.5, 0.7, 0.8, 0.9, and 1.0 \[unitless\], always blowing northwards. 
 The turbulence was set to 1.0, and the breeze setting to 0.2.
 
+To automate the export of the created keyframe scenes, we provide the script `export-keyframes.py` which can be run in Blender's internal python console after creating the animation in TheGrove.
+
 ### Laser scanning simulation
 
 Laser scanning was simulated with [HELIOS++](https://uni-heidelberg.de/helios) using a model of a _RIEGL LMS-Q780_ laser scanner in an airborne setting.
@@ -26,7 +28,7 @@ in the `output` folder.
 
 
 ## Analysis
-The analysis was calculating the mean height of returns for each of the simulations and calculating the differences to the no-wind-setting, for the merged dataset as well as for the three simulated strips. The `wind-simulation-analysis.ipynb` interactive notebook shows these results.
+The analysis was calculating the mean height of returns for each of the simulations and calculating the differences to the no-wind-setting, for the merged dataset as well as for the three simulated strips. The [interactive notebook](wind-simulation-analysis.ipynb)  shows these results.
 
 ## Acknowledgement
 This package has been developed in the course of the *UncertainTree* project, funded by the Austrian Science Fund ([FWF](https://www.fwf.ac.at/)) [Grant number J 4672-N].
